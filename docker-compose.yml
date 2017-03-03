@@ -1,0 +1,21 @@
+version: '2'
+
+services:
+   travian:
+      build: travian
+      container_name: travian
+      ports:
+         - "80:80"
+      volumes:
+         - ./appdata/TravianZ:/var/www/html
+
+   mysql:
+      image: "mysql:5.5.54"
+      container_name: travian-sql
+      environment:
+         - MYSQL_ROOT_PASSWORD=root
+         - MYSQL_DATABASE=travian
+         - MYSQL_USER=trav
+         - MYSQL_PASSWORD=trav
+      volumes:
+         - ./appdata/mysql/data:/var/lib/mysql
