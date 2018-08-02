@@ -10,7 +10,7 @@ services:
          - ./appdata/TravianZ:/var/www/html
 
    mysql:
-      image: "mysql:5.5.54"
+      image: "mysql:5.5.61"
       container_name: travian-sql
       environment:
          - MYSQL_ROOT_PASSWORD=root
