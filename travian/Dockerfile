@@ -1,2 +1,2 @@
-FROM php:7.3.10-apache
-RUN docker-php-ext-install mysqli mbstring
+FROM php:7.4.29-apache-bullseye
+RUN docker-php-ext-install mysqli
