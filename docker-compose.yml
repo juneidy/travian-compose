@@ -15,7 +15,7 @@ services:
       environment:
          - MYSQL_ROOT_PASSWORD=root
          - MYSQL_DATABASE=travian
-         - MYSQL_USER=trav
-         - MYSQL_PASSWORD=trav
+         - MYSQL_USER=travian
+         - MYSQL_PASSWORD=travian
       volumes:
          - ./appdata/mysql/data:/var/lib/mysql
