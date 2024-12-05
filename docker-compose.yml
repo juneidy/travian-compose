@@ -5,7 +5,7 @@ services:
       build: travian
       container_name: travian
       ports:
-         - "80:80"
+         - "8050:80"
       volumes:
          - ./appdata/TravianZ:/var/www/html
 
