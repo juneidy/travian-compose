@@ -10,7 +10,7 @@ services:
          - ./appdata/TravianZ:/var/www/html
 
    mysql:
-      image: "mysql:8.0.29-debian"
+      image: "mysql:8.0"
       container_name: travian-sql
       environment:
          - MYSQL_ROOT_PASSWORD=root
